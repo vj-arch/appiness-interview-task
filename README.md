@@ -1,3 +1,8 @@
+Kindly refer to the component gitusers and the service file gitusers.service.ts. As the folders contain different files built for different purpose.
+
+Thankyou
+
+
 # Myfirstapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
