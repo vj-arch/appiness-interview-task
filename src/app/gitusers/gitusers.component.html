@@ -1,0 +1,34 @@
+<p><small>*Please scroll down to view the search functionality</small></p>
+
+<button color="accent" class="getuser" (click)="subscribetouser()" mat-button>
+    List Users
+  </button>
+
+
+<div class="main"><!-- Container for the Division to display The lists-->
+  <div class="list-down-users"> <!-- Container for the Division to display The list of User-->
+    <p>GitHub Users</p>
+  
+  <mat-list role="list" *ngIf="flag" >
+      <mat-list-item   role="listitem" *ngFor="let p of g[0]" (click)="getrepo(p)"><mat-icon mat-list-icon>folder</mat-icon> {{ p.login }}</mat-list-item>
+     
+    </mat-list>
+  </div>
+    <div class="list-down-repo"> <!-- Container for the Division to display The list of repository-->
+        <p>User Repository</p>
+    <mat-list role="list" *ngIf="fg" >
+        <mat-list-item  role="listitem" *ngFor="let c of h" ><mat-icon mat-list-icon>folder</mat-icon>  {{c.full_name}}</mat-list-item>
+       
+      </mat-list>
+    </div>
+  </div>
+
+<!--Search Section-->
+  <input [(ngModel)]="searchText" placeholder="search text goes here">
+<ul>
+  <ng-container >
+  <li  *ngFor="let c of g[0] | filter : searchText">
+    {{c.login}}
+  </li>
+</ng-container>
+</ul>
