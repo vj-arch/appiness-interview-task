@@ -1,4 +1,4 @@
-Kindly refer to the component gitusers and the service file gitusers.service.ts. As the folders contain different files built for different purpose.
+Kindly refer to the component gitusers and the service file gitusers.service.ts.The application has built using Angular Material. As the folders contain different files built for different purpose.
 
 Thankyou
 
